@@ -1,0 +1,221 @@
+.my-booking {
+    padding: 50px 0;
+}
+
+.my-booking h1 {
+    text-align: center;
+    color: var(--blue);
+    font-family: "poppins-bold";
+    margin-bottom: 30px;
+}
+
+.my-booking .heading h4 {
+    margin-bottom: 15px;
+}
+
+.date-main {
+    width: 42%;
+}
+
+.date-main input {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px 0 15px 0;
+}
+
+.payment-btn {
+    text-align: end;
+}
+
+.booking-date {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.booking-date input[type="date"] {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.booking-date button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.booking-btn {
+    margin: 5px 0 17px 0;
+}
+
+.payment-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Booking Table */
+.table-main {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    text-wrap-mode: nowrap;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button.print-button {
+    background-color: var(--blue);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status.update-query {
+    color: #ffa500;
+}
+
+.status.confirmed {
+    color: #28a745;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.pagination .active {
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 1px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button.active {
+    background-color: var(--blue);
+    color: white;
+    border-color: var(--blue);
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #ddd;
+}
+.table-main {
+    overflow: auto;
+}
+
+.table-main::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.table-main::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-main::-webkit-scrollbar-thumb {
+    background-color: #2d117b;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.table-main::-webkit-scrollbar-thumb:hover {
+    background-color: #4a1ca2;
+}
+
+.table-main {
+    scrollbar-color: #2d117b #f1f1f1;
+    scrollbar-width: thin;
+}
+
+
+
+
+
+
+@media (max-width : 1199px) {
+    .date-main {
+        width: 40%;
+    }
+}
+
+@media (max-width : 991px) {
+    .date-main {
+        width: 38%;
+    }
+}
+@media (max-width : 767px) {
+    .payment-btn {
+        text-align: center;
+    }
+    .booking-date {
+        align-items: center;
+        flex-direction: column;
+    }
+    .my-booking .heading h4 {
+        text-align: center;
+    }
+    .date-main {
+        width: 50%;
+        text-align: center;
+    }
+}
+@media (max-width : 480px) {
+    .date-main {
+        width: 80%;
+        text-align: center;
+    }
+}

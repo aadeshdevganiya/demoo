@@ -1,0 +1,65 @@
+.my-package {
+    padding: 60px 0;
+}
+
+.my-package h1 {
+    text-align: center;
+    color: var(--blue);
+    font-family: 'poppins-bold';
+}
+
+.main-package {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 40px 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.main-package .heading h4 {
+    background-color: var(--white);
+    position: absolute;
+    top: -12px;
+    padding: 0 10px;
+}
+
+.main-package img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 50px;
+    margin-top: 20px;
+}
+
+.tota-price {
+    margin-top: 40px;
+    text-align: end;
+}
+
+.tota-price h6 {
+    background-color: #ddd;
+    padding: 10px;
+    display: inline;
+}
+
+@media (max-width : 991px) {
+    .main-package .row {
+        gap: 30px;
+    }
+}
+
+@media (max-width : 575px) {
+    .main-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tota-price {
+        margin-top: 10px;
+        text-align: end;
+    }
+}
